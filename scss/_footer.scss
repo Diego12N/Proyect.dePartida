@@ -1,0 +1,94 @@
+@mixin footerContent($display, $justifyC) {
+  display: $display;
+  justify-content: $justifyC;
+  background-color: $color-secundario;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  text-align: center;
+  padding: 20px 100px 20px 100px;
+}
+
+.footer {
+  @include footerContent(flex, space-evenly);
+
+  @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    justify-content: space-evenly;
+  }
+
+  @media only screen and (max-width: 992px) {
+    padding: 20px;
+  }
+
+  .footer__logo {
+    width: 210px;
+    display: inline-block;
+    text-align: left;
+    font-size: 14px;
+    color: white;
+
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+
+    p {
+      margin-top: 10px;
+      line-height: 22px;
+    }
+  }
+
+  .footer_icon {
+    width: 15%;
+    margin: 0;
+    margin-right: 15px;
+
+    @media only screen and (max-width: 600px) {
+      width: 25%;
+      margin: 0;
+    }
+  }
+
+  .footer__list {
+    display: inline-block;
+    list-style-type: none;
+    text-align: left;
+
+    @media only screen and (max-width: 1200px) {
+      padding: 0;
+    }
+
+    .footer__listTittle,
+    a {
+      width: 100%;
+      height: max-content;
+      font-family: "Oswald", sans-serif;
+      color: $color-primario;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+
+    li {
+      color: white;
+      a {
+        color: white;
+        font-family: "Atkinson Hyperlegible", sans-serif;
+      }
+    }
+  }
+
+  .footer__list--display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 0;
+    @media only screen and (max-width: 600px) {
+      justify-content: space-between;
+    }
+  }
+}
+
+footer ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}

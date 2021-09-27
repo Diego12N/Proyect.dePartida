@@ -1,0 +1,135 @@
+.worksMain {
+  margin: 50px auto;
+}
+
+#firstSection {
+  padding-top: 75px;
+  border-top: 1px solid darkgrey;
+  position: relative;
+}
+.worksSection {
+  width: 80%;
+  padding: 0 10%;
+  margin: auto;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.worksContent {
+  width: 50%;
+  background-color: white;
+  box-shadow: 0px 0px 5px 2px rgba(10, 6, 38, 0.15);
+  transition: all 1s;
+}
+.worksContent:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.workImage {
+  width: 100%;
+  box-shadow: 0px 0px 5px 2px rgba(10, 6, 38, 0.15);
+}
+
+.contentTittles {
+  padding: 20px 20px 0 20px;
+  height: 200px;
+}
+
+.workTittle {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.workSubTittle {
+  font-family: "Oswald", sans-serif;
+  color: rgb(240, 180, 0);
+  font-size: 16px;
+  font-weight: 300px;
+  margin-bottom: 10px;
+}
+
+.workDescription {
+  font-size: 14px;
+}
+@media only screen and (max-width: 600px) {
+  .worksSection,
+  .worksContent {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #firstSection {
+    border-top: none;
+  }
+  .worksSection {
+    align-items: center;
+    gap: 0;
+  }
+  .worksContent {
+    margin-bottom: 50px;
+  }
+  .contentTittles {
+    width: 100%;
+    height: 200px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  .workTittle {
+    font-size: 16px;
+  }
+  .workSubTittle {
+    font-size: 14px;
+  }
+  .workDescription {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .worksMain {
+    margin: 80px 50px;
+  }
+  .worksSection {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+  }
+
+  .worksContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .workDescription {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
+  .worksMain {
+    margin: 50px 80px;
+  }
+
+  .worksSection {
+    width: 90%;
+    padding: 0 20px;
+  }
+
+  .contentTittles {
+    margin: 10px 15px;
+    padding: 0;
+    height: 230px;
+  }
+
+  .workSubTittle {
+    margin-bottom: 10px;
+  }
+}

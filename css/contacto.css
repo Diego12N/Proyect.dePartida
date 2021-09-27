@@ -1,0 +1,50 @@
+@media only screen and (max-width: 1200px) {
+  .section {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section .section__tittle {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .section .section__tittle .section__tittle--style {
+    font-size: 25px;
+    border-bottom: 10px solid rgb(10, 6, 38);
+  }
+
+  .section .form {
+    width: 70%;
+  }
+
+  .section .form .form__button {
+    justify-content: space-between;
+  }
+
+  .section .form .form__button .form__button--style {
+    width: 48%;
+  }
+
+  .checkbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .checkbox .checkbox__tittle {
+    margin-right: 20px;
+
+    text-align: start;
+  }
+
+  .checkbox .checkbox__tittle p {
+    font-size: 18px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+  }
+
+  .checkbox .checkbox__select {
+    width: 40px;
+  }
+}

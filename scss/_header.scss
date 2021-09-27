@@ -1,0 +1,70 @@
+.headerFlex {
+  background-color: white;
+  padding: 20px 50px;
+  width: 100%;
+  border-bottom: 3px ridge;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  @media only screen and (max-width: 767px) {
+    padding: 20px 30px;
+    border-bottom: 3px ridge;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    padding: 30px;
+  }
+
+  /*****LOGOTIPO*****/
+  .containerLogotipo {
+    width: 15%;
+
+    @media only screen and (max-width: 767px) {
+      width: 25%;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+      width: 20%;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  /*****LOGOTIPO*****/
+
+  /*****MENU*****/
+  .container-fluid {
+    padding: 0;
+  }
+  .nav-link {
+    font-size: 14px;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+
+  #navbar-nav-style {
+    background-color: white;
+    gap: 20px;
+
+    @media only screen and (max-width: 600px) {
+      gap: 10px;
+    }
+  }
+
+  #nav-link-style {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    color: $color-primario;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: 600px) {
+      color: rgb(149, 147, 147);
+    }
+  }
+  /*****MENU*****/
+}

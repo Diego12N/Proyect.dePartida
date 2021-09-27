@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.itemList a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+/*Titulos*/
+.banner__tittle {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  color: rgb(10, 6, 38);
+  font-size: 35px;
+}
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  color: rgb(10, 6, 38);
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.banner__subtittle--White {
+  color: white;
+}
+/*Titulos*/
+/*MAIN*/
+.mainSize {
+  margin: 0 0 100px 0;
+}
+
+.bannerSection {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.carousel-item {
+  transition: all 4s;
+}
+
+.banner {
+  background-image: linear-gradient(to bottom, #f2d43d, rgb(240, 180, 0));
+  padding: 10px 20px 10px 100px;
+}
+
+.serviceSection {
+  margin-bottom: 100px;
+  border-top: 1px solid darkgray;
+  position: relative;
+  text-align: center;
+}
+
+.serviceSection,
+.firstSection,
+.secondSection {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*MAIN NOSOTROS*/
+.mainPagNosotros {
+  width: 100%;
+}
+
+.firstSection {
+  border-top: 1px solid darkgrey;
+  margin-top: 50px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.imageContent {
+  width: 48%;
+  height: 250px;
+  background-image: url(../Imagenes/pantone.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tittleSection {
+  width: max-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: absolute;
+  top: -25px;
+}
+
+.elementSection,
+.listSection {
+  width: 48%;
+  margin-top: 50px;
+}
+
+.listSection {
+  border-left: 10px solid rgb(10, 6, 38);
+  box-shadow: 0px 0px 5px 2px rgba(10, 6, 38, 0.15);
+}
+
+.listSection ul {
+  list-style: none;
+  color: rgb(240, 180, 0);
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  padding: 30px;
+  line-height: 2;
+}
+
+.serviceTittle,
+.tittleSection {
+  font-size: 28px;
+  background-color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  color: rgb(10, 6, 38);
+}
+
+.serviceTittle {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  position: relative;
+  top: -25px;
+}
+
+.contentElement {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Element {
+  display: inline-block;
+  background-color: white;
+  height: 400px;
+  width: 400px;
+  text-align: center;
+  margin: 40px;
+  padding: 50px 70px 50px 70px;
+  border: 5px solid rgb(240, 180, 0);
+  border-right-color: rgb(10, 6, 38);
+  border-bottom-color: rgb(10, 6, 38);
+  border-radius: 5px;
+  box-shadow: 10px 10px 20px 5px rgba(10, 6, 38, 0.3);
+  transition: all 0.5s;
+}
+
+.Element:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.Element h3 {
+  margin-bottom: 10px;
+}
+
+.LinkAServicio {
+  color: rgb(10, 6, 38);
+  font-size: 25px;
+}
+.LinkAContacto {
+  color: rgb(240, 180, 0);
+  font-size: 16px;
+}
+
+.sectionWhite {
+  background-color: white;
+  margin-top: 25px;
+}
+
+main p {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 16px;
+}
+
+/*CIERRE MAIN*/
+
+/*MEDIA*/
+
+@media only screen and (max-width: 600px) {
+  body {
+    line-height: normal;
+  }
+
+  /*MAIN*/
+  /*PRIMERA SECCION*/
+  .mainSize {
+    margin-bottom: 50px;
+  }
+
+  .bannerSection {
+    margin-bottom: 70px;
+  }
+
+  .imageBanner {
+    height: 250px;
+  }
+
+  .banner {
+    padding: 30px;
+  }
+
+  .banner h1 {
+    font-size: 25px;
+  }
+
+  .banner h2 {
+    font-size: 16px;
+  }
+
+  /*CIERRE PRIMERA SECCION*/
+  /*SEGUNDA SECCION*/
+  .serviceTittle {
+    width: 220px;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .contentElement {
+    margin-bottom: 30px;
+  }
+
+  .Element {
+    padding: 25px;
+    margin: 20px;
+    height: 275px;
+    width: 100%;
+  }
+
+  .Element div a img {
+    width: 80px;
+  }
+
+  .Element .boxTittle a {
+    font-size: 20px;
+  }
+
+  .Element p {
+    font-size: 14px;
+  }
+  /*CIERRE SEGUNDA SECCION*/
+  /*CIERRE MAIN*/
+  /*MAIN NOSOTROS*/
+  .elementSection,
+  .listSection {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .listSection ul {
+    line-height: normal;
+    margin-bottom: 0;
+  }
+  .listSection ul li {
+    margin-bottom: 10px;
+  }
+
+  .imageContent {
+    width: 100%;
+  }
+  /*CIERRE MAIN NOSOTROS*/
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .containerLogotipo {
+    width: 40%;
+    padding-right: 20px;
+  }
+
+  .containerLogotipo img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+  }
+
+  /*MAIN*/
+  /*PRIMERA SECCION*/
+
+  .bannerSection {
+    margin-bottom: 70px;
+  }
+
+  .imageBanner {
+    height: 250px;
+  }
+
+  .banner {
+    padding: 30px;
+  }
+
+  .banner h1 {
+    font-size: 25px;
+  }
+
+  .banner h2 {
+    font-size: 20px;
+  }
+
+  /*CIERRE PRIMERA SECCION*/
+  /*SEGUNDA SECCION*/
+  .serviceTittle {
+    width: 220px;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+
+  .Element div {
+    margin-bottom: 10px;
+  }
+
+  .Element div a img {
+    width: 80px;
+  }
+
+  .Element .boxTittle a {
+    font-size: 24px;
+  }
+
+  .Element p {
+    font-size: 16px;
+    margin: 30;
+  }
+  /*CIERRE SEGUNDA SECCION*/
+  /*CIERRE MAIN*/
+  /*MAIN NOSOTROS*/
+  .elementSection,
+  .listSection {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .imageContent {
+    width: 100%;
+  }
+  /*CIERRE MAIN NOSOTROS*/
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /*FIRST SECTION*/
+  .banner {
+    padding: 30px 30px 30px 30px;
+  }
+
+  /*SEGUNDA SECCION*/
+  .serviceTittle {
+    margin-bottom: 30px;
+  }
+  .Element {
+    margin: 30px;
+  }
+  /*MAIN NOSOTROS*/
+  .elementSection,
+  .listSection {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .imageContent {
+    width: 100%;
+  }
+  /*CIERRE MAIN NOSOTROS*/
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  /*SEGUNDA SECCION*/
+  .serviceTittle {
+    margin-bottom: 30px;
+  }
+  .Element {
+    margin: 30px;
+  }
+
+  /*MAIN NOSOTROS*/
+  .elementSection,
+  .listSection {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .imageContent {
+    width: 100%;
+  }
+  /*CIERRE MAIN NOSOTROS*/
+}
