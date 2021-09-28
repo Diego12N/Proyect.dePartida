@@ -172,8 +172,15 @@ footer ul li {
       display: flex;
       justify-content: space-between;
       margin-bottom: 20px; }
+      @media only screen and (max-width: 600px) {
+        .section .form .form__data, .section .form .form__coments, .section .form .form__button {
+          flex-direction: column;
+          gap: 20px; } }
     .section .form .form__data--style, .section .form .form__coments--email, .section .form .form__coments--box {
       width: 48%; }
+      @media only screen and (max-width: 600px) {
+        .section .form .form__data--style, .section .form .form__coments--email, .section .form .form__coments--box {
+          width: 100%; } }
     .section .form .form__data--style, .section .form .form__coments--email, .section .form .form__coments--box {
       border-radius: 3px;
       border: none;
@@ -187,10 +194,17 @@ footer ul li {
       width: 100%; }
       .section .form .form__coments .form__coments--email {
         margin-bottom: 20px; }
+        @media only screen and (max-width: 600px) {
+          .section .form .form__coments .form__coments--email {
+            margin-bottom: 0; } }
     .section .form .form__button {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly; }
+      @media only screen and (max-width: 600px) {
+        .section .form .form__button {
+          flex-direction: row;
+          flex-wrap: nowrap; } }
       .section .form .form__button .form__button--style {
         width: 40%; }
     .section .form .checkbox {
