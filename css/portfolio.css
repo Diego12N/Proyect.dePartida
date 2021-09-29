@@ -55,6 +55,10 @@
   font-size: 14px;
 }
 @media only screen and (max-width: 600px) {
+  .worksSection {
+    margin-bottom: 0;
+  }
+
   .worksSection,
   .worksContent {
     width: 100%;
